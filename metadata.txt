@@ -1,0 +1,53 @@
+# This file contains metadata for your plugin.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Dynamic Flow
+qgisMinimumVersion=3.0
+description=Dynamic Flow is a qgis plugin to estimate the spatio-temporal 3D gradient flow from the point observation of the attributes values such as aggregated cell-phone mobility data. 
+version=0.1
+author=Bo-Cheng Lin, Chen-Yu Liu, Ta-Chien Chan
+email=tachien@geohealth.tw
+
+
+about=Dynamic Flow is a qgis plugin to estimate the spatio-temporal 3D gradient flow from the point observation of the attributes values such as aggregated cell-phone mobility data. The algorithm was based on the image-processing techniques which provided a two-step 3D gradient method to extract the movement features. The first step is to estimate the initial movement pattern in each spatiotemporal grid, and then to estimate the accumulated movement pattern within a time period around a geographical grid. This method can be applied adaptively to multi-scale spatiotemporal grid data. Using geospatial visualization methods, estimated motion characteristics such as velocity and flow direction can be made intuitive and integrated with other multiscale geospatial data. 
+      
+      The introduction of the algorithm: Bo-Cheng Lin, Ta-Chien Chan*, 2022, “Visualizing Population Mobility from Spatio-temporally Aggregated Mobile Phone Data via a 3D Gradient Approach”, TRANSACTIONS IN GIS, https://doi.org/10.1111/tgis.13008 
+      
+      The tutorial data: Bergroth, C., Järv, O., Tenkanen, H., Manninen, M., Toivonen, T., 2022. A 24-hour population distribution dataset based on mobile phone data from Helsinki Metropolitan Area, Finland. Scientific Data 9, 39. https://doi.org/10.1038/s41597-021-01113-4 (https://zenodo.org/records/4726996)
+
+tracker=https://github.com/chanyu020816/QGIS-Plugin-DynamicFlow/issues
+repository=https://github.com/chanyu020816/QGIS-Plugin-DynamicFlow
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=yes
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=python, flow
+
+homepage=https://github.com/chanyu020816/QGIS-Plugin-DynamicFlow
+category=Analysis
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=geopandas==0.13.2, numpy
+
+
+Category of the plugin: Raster, Vector, Database or Web
+# category=
+
+# If the plugin can run on QGIS Server.
+server=False
+pip_dependencies=geopandas==0.13.2, numpy
