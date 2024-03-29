@@ -15,10 +15,12 @@ Bergroth, C., Järv, O., Tenkanen, H., Manninen, M., Toivonen, T., 2022. A 24-ho
 2. You can also install from zipped file. After install `dynamic_flow.zip`. Open `QGIS` and go to `Plugins` -> `Manage and Install plugins` -> `Install from Zip` -> Select the downloaded zip folder and press `Install plugin`. 
 
 If successfully install, the icon for the Dynamic Flow plugin will appear in the 'Processing Toolbox' panel.
+
 ![alt text](image-1.png)
 
 #### Solution - Module 'geopandas' not found error
 Please make sure that QGIS has installed the Python library "geopandas". If you encounter the following error during installation (ModuleNotFoundError: No module named 'geopandas'), then you need to install geopandas using the following method:
+
 ![alt text](image.png)
 
 #### Install geopandas library - Windows
